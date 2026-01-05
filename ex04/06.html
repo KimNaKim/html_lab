@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>전송된 데이터 출력하기</h1>
+    <div id="output"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const fullName = params.get("fullName");
+      const email = params.get("eMail");
+      const date = params.get("birthday");
+
+      document.getElementById("output").innerText =
+        "이름 : " + fullName + "\n이메일 : " + email + "\n생년월일 : " + date;
+    </script>
+  </body>
+</html>

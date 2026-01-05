@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 태그</title>
+  </head>
+  <body>
+    <h1>form 태그</h1>
+    <hr />
+    <!-- name이 키, value가 밸류 -->
+    <!-- input 태그는 인라인 태그 -->
+    <!-- 정보를 전송하고 싶을 때에는 submit type -->
+    <form id = "personalData" action ="http://localhost:5500/ex04/06.html"  method = "get">
+      <input type="text" name="fullName" placeholder="이름을 입력하십시오." /><br />
+      <input type="password" name="pwd" placeholder="비밀번호를 입력하십시오." /><br />
+      <input type="email" name="eMail" placeholder="example@naver.com" /><br />
+      <input type="checkbox" name="checkBox" value="1"><label>동의</label></input>
+      <input type="checkbox" name="checkBox"><label>비동의</label></input> <br>
+      <input type="date" name="birthday"><br>
+      <select name="payday">
+            <option value = "5">매월 5일</option>
+            <option value = "15">매월 15일</option>
+            <option value = "25">매월 25일</option>
+      </select><br>
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>
